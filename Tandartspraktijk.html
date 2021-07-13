@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tandartsafspraak</title>
+</head>
+<body>
+<h1>Tandartsafspraak</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<br></br>
+<img src="afbeeldingen/wachtzaal.jpg" alt="wachtzaal" title="wachtzaal" width="300" height="250">
+<img src="afbeeldingen/logo.jpg" alt="logo" title="logo" width="300" height="300">
+<img src="afbeeldingen/stoel.jpg" alt="stoel" title="praktijk" width="300" height="250">
+<br></br>
+<form id="contactform" action="https://formspree.io/f/meqvlqjy" method="post">
+<fieldset>
+<legend>Persoonlijke gegevens</legend>
+<br>
+<label for="naam"><strong>Naam:</strong></label><input type="text" name="naam"><br>
+<input type="radio" name="aanhef" value="Mnr" checked>Mnr.
+<input type="radio" name="aanhef" value="Mvr" checked>Mvr.
+<input type="radio" name="aanhef" value="Mej" checked>Mej.<br>
+<label for="adres"><strong>Adres:</strong></label> <input type="text" id="adres" name="adres" ><br>
+<label for="postcode"><strong>Postcode</strong></label> <input type="text" id="postcode" name="postcode"><br>
+<label for="woonplaats"><strong>Woonplaats:</strong></label> <input type="text" id="woonplaats" name="postcode"><br>
+<label for="Geboortedatum"><strong>Geboortedatum:</strong></label> <input type="date" name="datum" max="2021-12-31"><br>
+<label for="GSM-nummer"><strong>GSM-Nummer:</strong></label> <input type="number" id="gsm-nummer" name="GSM-nummer"><br>
+</fieldset>
+<fieldset>
+<legend>Beschrijving van de klachten</legend>
+<br>
+<label for="Klachten"><strong>Klachten:</strong> <br>
+<input type="checkbox" name="klacht" value="Pijn bij warme of koude voedingsmiddellen">Pijn bij warme of koude voedingsmiddellen
+<input type="checkbox" name="klacht" value="Kloppende pijn">Kloppende pijn
+<input type="checkbox" name="klacht" value="Zeurende pijn">Zeurende pijn
+<input type="checkbox" name="klacht" value="Stekende Pijn">Stekende Pijn
+<input type="checkbox" name="klacht" value="Zwelling">Zwelling
+<input type="checkbox" name="klacht" value="Pijn bij het kauwen">Pijn bij het kauwen
+<input type="checkbox" name="klacht" value="Andere">Andere<br><br>
+<label for:"fotobestand"><strong>Mogelijkheid om een foto toe te voegen</strong></label><br>
+<input type="file" name="foto" accept="jpg" multiple="3"><br>
+</fieldset>
+<fieldset>
+<legend>Toelichting van de klachten</legend>
+<br>
+<td><strong>Beschrijving van de klachten</strong><br>
+<textarea name="message" placeholder="Uw bericht"></textarea><br><br>
+<label for="afspraak maken"><strong>Afspraak maken</strong></label><br>
+<input type="date" name="datum" max="2060-12-31"><br>
+</fieldset>
+<input type="submit" value="verzend">
+</form>
+</body>
+</html>
